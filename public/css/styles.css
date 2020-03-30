@@ -1,0 +1,80 @@
+/** previuos style easier
+h1{
+    color:blue
+}
+img{
+    width: 250px;
+}
+**/ 
+/**img {
+    width: 250mp; to target each img individually
+}*/
+
+
+body {
+    color: #333333;
+    font-family: arial; 
+    max-width: 650px; /**put the page in the middle of browser*/
+    margin: 0 auto; /** make 0 margin from up to down, and auto: distributing the space from left to right*/
+    padding: 0 16px; /** 0 form up to down. 16px btw the body content and the size of the browser window */ 
+
+
+    display: flex; /**enabling flexbox: to use advance css*/
+    /** flex-direction: row; everything goes fromleft to right*/
+    flex-direction: column; /**everything goes from top to buttom*/
+    min-height: 100vh /** to bring the footer lower*/
+}
+
+/**target class style for footer*/
+.main-content {
+    flex-grow: 1; /**to allows class content as much space as need, and bring down the footer*/
+}
+
+footer {
+    /** background: #888888;*/
+    color: #888888;
+    border-top: 1px solid #eeeeee; 
+     /**margin: 16px;  to give espace ouside the padding*/
+     /**padding: 16px; to give margin to the background*/
+     margin-top: 16px;
+     padding: 16px 0;
+}
+
+header {
+    margin-top: 16mp;
+    margin-bottom: 48mp;  
+}
+
+h1 {
+    font-size: 64px;
+    margin-bottom: 16px;
+}
+
+/** to customize links per pages*/
+header a {
+    color: #888888;
+    margin-right: 16px;
+    text-decoration: none; /**to remove the underline of the links, and spaces betw them - text-decoration: underline;  */
+}
+
+.portrait {
+    width: 250px;
+}
+
+input {
+    border: 1px solid #cccccc; /**input box size, border, and border color*/
+    padding: 8px; /**to give space btw the text and the border */
+}
+
+button {
+    cursor: pointer; /** allows us to give shape to the cursor aparience*/
+    border: 1px solid #888888;
+    background: #888888;
+    color: white;
+    padding: 8px;
+}
+
+
+
+
+
