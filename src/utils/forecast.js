@@ -29,7 +29,8 @@ const request = require('request')
         } else if (body.error) {
             callback('unable to find location ', undifined)
         } else {
-            callback(undefined, 'It is currently ' + body.daily.data[0].summary+ ' It is currently '+  body.currently.temperature + ' degrees out. there is a ' + body.currently.precipProbability+ ' % chance of rain.')
+         // console.log(body.daily.data[0]) // to see the data in the body API
+            callback(undefined, 'It is currently ' + body.daily.data[0].summary+ ' It is currently '+  body.currently.temperature + ' degrees out, the hight today is ' +body.daily.data[0].temperatureHigh + ' . With a low of ' +body.daily.data[0].temperatureLow +' . there is a ' + body.currently.precipProbability+ ' % chance of rain.')
         }
     })
   })            
