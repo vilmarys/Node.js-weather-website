@@ -21,6 +21,7 @@ const partialsPath  = path.join(__dirname, '../templates/partials') //this path 
 //setup static directory to server
 //routes given to express server
 app.use(express.static(publicDirectoryPath))
+const port = process.env.PORT || 3000 //(PORT: for heroku, 3000 to run locally)
 
 
 //set: set a value for a givem express setting, (key: view engine, value: hbs). hbs is the npm library nam to create dynamic tamplates (for style)
@@ -130,8 +131,8 @@ app.get('*', (req, res) => {
 
 
 //starting express server
-app.listen(3000, () => {
-    console.log('server is up on port: 3000')
+app.listen(port, () => {
+    console.log('server is up on port:'+ port)
 })
 
 
